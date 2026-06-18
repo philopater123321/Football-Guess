@@ -9,3 +9,6 @@ High scores are stored for each level, and they don't change until you break the
 
 ## Why did I make this game?
 I made this game for those people who love guessing games, such as me, and actually it is so good.
+
+### Important Note:
+I didn't make too much commits because I still wasn't experienced enough to know this method in VS code and Github. And I used AI to assist me in writing the JavaScript code.
