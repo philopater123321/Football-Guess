@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Guess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu" class="screen active">
+            <h1 id="game-name">Football Guess</h1>
+            <h1 id="guess">Guess the football player!</h1>
+            <h2>Choose the level:</h2>
+            <button onclick="startGame('easy')">Easy</button>
+            <button onclick="startGame('med')">Medium</button>
+            <button onclick="startGame('hard')">Hard</button>
+            <div class="high-scores">
+                <h3>High scores:</h3>
+                <p>Easy: <span id='hs-easy'>0</span></p>
+                <p>Medium: <span id='hs-med'>0</span></p>
+                <P>Hard: <span id="hs-hard">0</span></P>
+            </div>
+        </div>
+        <div id="game-screen" class="screen">
+            <div class="stats">
+                <p>Score: <span id='current-score'>0</span>/20</p>
+            </div>
+            <img id="footballer-img">
+            <div id="options-container" class="options">
+
+            </div>
+        </div>
+        <div id="game-over" class="screen">
+            <h2 id="game-over-title">Game Over!</h2>
+            <p>Your score: <span id="final-score">0</span></p>
+            <p>High score: <span id="final-high-score">0</span></p>
+            <button onclick="showMenu()">Main Menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

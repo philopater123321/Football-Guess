@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(110, 97, 97, 0.736);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container{
+    background-color: white;
+    box-shadow: 0 0 35px rgba(255, 243, 255, 0.6);
+    padding: 30px;
+    align-items: center;
+    gap: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 90%;
+}
+#menu h2{
+    font-size: 40px;
+}
+#game-name{
+    font-size: 70px;
+    font-family: cursive;
+    color: rgb(255, 200, 0);
+}
+
+#guess{
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: cursive;
+    color: darkblue;
+}
+p{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.screen{
+    display: none;
+}
+
+.screen.active{
+    display: block
+}
+button{
+    border-radius: 20px;
+    background: #007bff;
+    border: none;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 15px 0;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-grow: 1;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.0005) translateY(-5px);
+}
+
+#footballer-img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 12px;
+}
+
+.high-scores{
+    border-top: 1px solid grey;
+    margin-top: 30px;
+    padding-top: 20px
+}
+.high-scores h3{
+    font-size: 40px;
+}
+
+button.correct{
+    background-color: green;
+    transition: 0.4s ease;
+}
+
+button.wrong{
+    background-color: red;
+    transition: 0.4s ease;
+}
+
+button:disabled:not(.correct):not(.wrong){
+    opacity: 0.6;
+    cursor: not-allowed;
+}
